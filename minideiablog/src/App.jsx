@@ -1,13 +1,18 @@
+import * as React from 'react';
+import Button from '@mui/material/Button';
+import ResponsiveAppBar from './navbar/NavBar';
+import Box from '@mui/material/Box';
+import Typography from '@mui/material/Typography';
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-  <div>
-    <h1>MInha pagina em React</h1>
-  </div>
+      <div>
+        <ResponsiveAppBar/>
+        <Typography variant="h4" gutterBottom>Minha pagina em React</Typography>
+        <Button variant="contained">Hello world</Button>
+      </div>
     </>
   )
 }
